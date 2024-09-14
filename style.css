@@ -69,7 +69,7 @@ a:hover::after{
     padding-right: 3px;
     cursor: pointer;
 }
-button{
+.navbar button{
     padding: 15px 27px;
     border: none;
     border: 1px solid;
@@ -80,7 +80,7 @@ button{
     align-items: center;
 
 }
-button:hover{
+.navbar button:hover{
     background-color: #1c1e21;
     transition: 0.5s all ease-in-out;
     cursor: pointer;
@@ -124,4 +124,35 @@ button:hover{
     opacity: 0.8;
     padding-top: 10px;
     font-size: 12px;
+}
+.firstSection button{
+    padding: 16px 28px;
+    border: none;
+    border-radius: 50px;
+    font-size: 12px;
+    background-color: #25D366;
+    display: flex;
+    align-items: center;
+    font-family: "Helvetica Neue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.firstSection button:hover{
+    cursor: pointer;
+    background-color: antiquewhite;
+    transition: 1s all ease-out;
+    transform-origin: bottom;
+}
+.firstSection h1{
+    font-size: 80px;
+    font-family:Helvetica, sans-serif;
+    color: #ffffff;
+    line-height: 80px;
+}
+.firstSection p{
+    font-size: 12px;
+    line-height: 16.08px;
+    color: #ffffff;
+}
+.imgMaa .left button{
+    gap: 8px;
+
 }
