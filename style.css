@@ -7,8 +7,9 @@
     height: 100vh;
     width: 100vw;
     background-color: #fcf5eb;
-    padding: 0px 45px;
+    padding: 0px 35px;
 }
+/* Navbar */
 .navbar{
     display: flex;
     justify-content: space-between;
@@ -108,4 +109,19 @@ button:hover{
     background-color: #25D366;
     
 } */
-
+/* Section 1 - Maa Beti Image */
+.firstSection{
+    height: 100%;
+    padding-top: 30px;
+}
+.imgMaa{
+    background: url(./image/MaaBeti.png);
+    height: 100%;
+    border-radius: 20px;
+}
+.firstSection > p{
+    text-align: end;
+    opacity: 0.8;
+    padding-top: 10px;
+    font-size: 12px;
+}
