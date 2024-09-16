@@ -8,6 +8,7 @@
     width: 100vw;
     background-color: #fcf5eb;
     padding: 0px 35px;
+    overflow-x: none;
 }
 /* Navbar */
 .navbar{
@@ -195,4 +196,30 @@ a:hover::after{
     width: 450px;
     padding-top: 25px;
     padding-bottom: 70px;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    padding-right: 32px;
+}
+.left > button{
+    width: 140px;
+}
+.left > button > p{
+    font-size: 1.4em;
+    color: black;
+}
+.left-top{
+    padding-top: 100px;
+}
+.left-top > h1{
+    font-size: 80px;
+    font-weight: 100;
+    padding: 75px 0px 20px 0px;
+    text-align: left;
+}
+.left-top p{
+    font-size: 18px;
+    line-height: 25px;
 }
