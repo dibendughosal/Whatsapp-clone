@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family:Helvetica, sans-serif;
 }
 .container{
     min-height: 100vh;
@@ -112,8 +113,9 @@ a:hover::after{
 } */
 /* Section 1 - Maa Beti Image */
 .firstSection{
-    height: 150%;
+    height: 90%;
     padding-top: 30px;
+    background-color: #fcf5eb;
 
 }
 .imgMaa{
@@ -124,12 +126,13 @@ a:hover::after{
     justify-content: space-around;
     overflow: hidden;
 }
-.opacity{
+ .opacity{
     text-align: end;
     opacity: 0.8;
     padding-top: 10px;
-    padding-right: 10px;
+    padding-right: 40px;
     font-size: 12px;
+    background-color: #fcf5eb;
 }
 .firstSection button{
     padding: 16px 28px;
@@ -323,4 +326,131 @@ a:hover::after{
 .left-top p{
     font-size: 18px;
     line-height: 25px;
+}
+
+/* Second Section */
+.secondSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    min-height: 100%;
+    background-color: #fcf5eb;
+    position: relative;
+    gap: 20px;
+    overflow: hidden;
+}
+.secondSection img{
+    width: 100%;
+    padding: 40px 30px;
+}
+.secondSection img:nth-child(1){
+    animation: sec1 4.5s;
+}
+@keyframes sec1{
+    0%{
+        transform: translateY(50px);
+        opacity: 0;
+    }
+ 
+    100%{
+        transform: translateY(0);
+        opacity: 0;
+    }
+}
+.secondSection img:nth-child(2){
+    width: 120px;
+    height: 130px;
+    border-radius: 50%;
+    position: absolute;
+    top: 8px;
+    left: 535px;
+    animation: sec2 5.5s;
+}
+@keyframes sec2{
+    0%{
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.secondSection > p{
+    text-align: center;
+    font-size: 48px;
+    font-family: Helvetica, sans-serif;
+    letter-spacing: -1.44px;
+    font-weight: 100;
+    animation: para 8.5s;
+    line-height: 48px;
+
+}
+@keyframes para{
+    0%{
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.secondSection img:nth-child(4){
+    animation: sec2 6.2s;
+}
+@keyframes sec2{
+    0%{
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    80%{
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Theird Section */
+.thirdSection{
+    background-color: #fcf5eb;
+    display: flex;
+    flex-direction: column;
+}
+.first{
+    display: flex;
+    /* min-width:80%; */
+    height: 80%;
+    align-items: center;
+    justify-content: space-around;
+}
+.firstLeft{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.firstLeft > h1{
+    font-size: 60px;
+    line-height: 60px;
+    font-family: Helvetica, sans-serif;
+    font-weight: 100;
+}
+.firstLeft > p{
+    font-size: 18px;
+    line-height: 25px;
+    font-family:Helvetica, sans-serif;
+    font-weight: 100;
+    opacity: 0.9;
+}
+.firstLeft a:hover,i:hover{
+    color: #25D366;
+    cursor: pointer;
 }
