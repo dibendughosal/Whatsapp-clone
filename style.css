@@ -424,13 +424,26 @@ a:hover::after{
     background-color: #fcf5eb;
     display: flex;
     flex-direction: column;
+    
 }
-.first{
+.first,.third{
+    animation: third 6.5s ease-in-out;
     display: flex;
     /* min-width:80%; */
     height: 80%;
     align-items: center;
     justify-content: space-around;
+}
+@keyframes third{
+    0%{
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    60%{
+        transform: translateY(50px);
+        opacity: 1;
+    }
+
 }
 .firstLeft{
     display: flex;
