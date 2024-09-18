@@ -419,20 +419,22 @@ a:hover::after{
     }
 }
 
-/* Theird Section */
+/* Third Section */
 .thirdSection{
     background-color: #fcf5eb;
     display: flex;
     flex-direction: column;
     
+    
 }
-.first,.third{
+.first , .third{
     animation: third 6.5s ease-in-out;
     display: flex;
     /* min-width:80%; */
     height: 80%;
     align-items: center;
     justify-content: space-around;
+    padding-top: 80px;
 }
 @keyframes third{
     0%{
@@ -450,11 +452,39 @@ a:hover::after{
     flex-direction: column;
     gap: 20px;
 }
-.firstLeft > h1{
+.firstRight{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.firstLeft > h1 , .firstRight > h1{
     font-size: 60px;
     line-height: 60px;
     font-family: Helvetica, sans-serif;
     font-weight: 100;
+}
+.firstLeft > p , .firstRight>p{
+    font-size: 18px;
+    line-height: 25px;
+    font-family:Helvetica, sans-serif;
+    font-weight: 100;
+    opacity: 0.9;
+}
+.firstLeft a:hover,i:hover{
+    color: #25D366;
+    cursor: pointer;
+}
+
+.firstLeft > p{
+    font-size: 18px;
+    line-height: 25px;
+    font-family:Helvetica, sans-serif;
+    font-weight: 100;
+    opacity: 0.9;
+}
+.firstLeft a:hover,i:hover{
+    color: #25D366;
+    cursor: pointer;
 }
 .firstLeft > p{
     font-size: 18px;
@@ -466,4 +496,28 @@ a:hover::after{
 .firstLeft a:hover,i:hover{
     color: #25D366;
     cursor: pointer;
+}
+.beach{
+    position: relative;
+}
+.beach img:nth-child(1){
+    padding-left: 40px;
+    overflow: hidden;
+}
+.beach img:nth-child(2){
+    position: absolute;
+    top: 195px;
+    left: 168px;
+    width: 370px;
+    height: 270px;
+    overflow: hidden;
+}
+.bg{
+    background-color: #111b21;
+    color: #ffffff;
+    padding: 90px 15px;
+    
+}
+.bg p{
+    color: #ffffff;
 }
