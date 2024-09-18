@@ -346,7 +346,7 @@ a:hover::after{
     padding: 40px 30px;
 }
 .secondSection img:nth-child(1){
-    animation: sec1 4.5s;
+    animation: sec1 3.5s;
 }
 @keyframes sec1{
     0%{
@@ -366,7 +366,7 @@ a:hover::after{
     position: absolute;
     top: 8px;
     left: 535px;
-    animation: sec2 5.5s;
+    animation: sec2 3.5s;
 }
 @keyframes sec2{
     0%{
@@ -428,7 +428,7 @@ a:hover::after{
     
 }
 .first , .third{
-    animation: third 6.5s ease-in-out;
+    animation: third 10.5s ease-in-out;
     display: flex;
     /* min-width:80%; */
     height: 80%;
@@ -520,4 +520,19 @@ a:hover::after{
 }
 .bg p{
     color: #ffffff;
+}
+.firstRight .grp{
+    position: relative;
+}
+.grp img:nth-child(2){
+    position: absolute;
+    right: 105px;
+    top: 165px;
+}
+
+/* Fourth Section */
+.fourthSection{
+    min-width: 100%;
+    height: 490px;
+    background-color: #111b21;
 }
