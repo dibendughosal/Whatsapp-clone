@@ -549,7 +549,16 @@ footer .upper {
   flex-direction: column;
   gap: 40px;
 }
-footer p,i{
+.gap2{
+    display: flex;
+    flex-direction: column;
+    gap: 90px;
+}
+footer p{
+    color: #ffffff;
+    font-size: 12px;
+}
+footer i{
     color: #ffffff;
 }
 .bar-column > a {
@@ -565,7 +574,7 @@ footer p,i{
 }
 .bar1 {
   display: flex;
-  gap: 40px;
+  gap: 30px;
 }
 .bar-column {
   display: flex;
@@ -573,12 +582,37 @@ footer p,i{
   gap: 12px;
   text-align: start;
   text-decoration: none;
-}
-.bar-column a:hover {
-  text-decoration: underline;
+  font-size: 12px;
 }
 select{
     width:120px;
     padding: 10px;
     border-radius: 20px;
+}
+.icon{
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 15px;
+}
+.button{
+    display: flex;
+    gap: 10px;
+}
+.button p{
+    font-size: 1.2em;
+    color: #111b21;
+}
+.button:hover{
+    background-color: #1c1e21;
+    color: white;
+    animation: button 5.5s;
+    overflow: hidden;
+}
+@keyframes button {
+    0%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(0);
+    }
 }
